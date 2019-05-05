@@ -1,1 +1,3 @@
-# 11-785 DL Project
+# 11-785 Deep Learning Final Project
+
+Cycle-GAN has achieved great results in style transfer. However, it is sometimes not precise enough. For example, as figure 1 demonstrates, if we want to transfer a horse to zebra, it applies the stripes to not only the horse body, but also the background, even the human riding the horse. Besides, the background of the image is also patternized with the strip and rendering a lower saturation than original one. We suppose Cycle-GAN could render better result if we provide it with a mask of the object that we want to apply style transfer on. It can be applied to resolve the ambiguity in the image for Cycle-GAN to generate more precise transformation. Our team plans to combine the two neural networks, by feeding in the segmentation of the input image (from Mask R-CNN), in addition to the input image, into Cycle-GAN to achieve better accuracy.
